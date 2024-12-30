@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIUM Merchandise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="image/iium-logo.png" alt="IIUM Logo">
+        </div>
+        <div class="header-title">
+            <h1>IIUM MERCHANDISE</h1>
+        </div>
+        <div class="header-logo2">
+            <img src="image/eshop.png" alt="eshop Logo">
+        </div>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <button class="dropdown-btn" onclick="toggleDropdown()">ALL PRODUCTS</button>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li onclick="selectCategory('Apparel')">Apparel</li>
+              <li onclick="selectCategory('Souvenir')">Souvenir</li>
+        </div>
+          <div class="search">
+            <input type="text" id="searchInput" placeholder="Search for products...">
+          </div>
+          <div class="buttons">
+          <a href="#"><img src="image/Cart.png"></a>
+          <a href="#"><img src="image/Login.png"></a>
+
+    </nav>
+    
+ 
+
+    <section class="content-section">
+        <div class="section-title">BEST SELLER</div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="image/placeholder.png" alt="IIUM Basic T-Shirt">
+                <h3>IIUM Basic T-Shirt</h3>
+                <p class="price">RM 30</p>
+                <button onclick="addToCart('IIUM Basic T-Shirt', 30)">Add to Cart</button>
+            </div>
+            <!-- Repeat the above block for additional products -->
+        </div>
+        <button>View All</button>
+    </section>
+
+    
+    <footer>
+        <div class="footer-links">
+            <div class="footer-info"> 
+                <img src="image/iium.png" alt="IIUM Logo">
+                <p><strong>INTERNATIONAL ISLAMIC UNIVERSITY MALAYSIA</strong></p>
+                <p>P.O. Box 10, 50728 Kuala Lumpur</p>
+                <p>Phone: (+603) 6421 4000</p>
+                <p>Fax: (+603) 6421 4053</p>
+                <p>Email: <a href="mailto:eshop@iium.edu.my">eshop@iium.edu.my</a></p>
+                <div class="footer-icons">
+                    <a href="#"><img src="image/1.png" alt="Twitter"></a>
+                    <a href="#"><img src="image/2.png" alt="Facebook"></a>
+                    <a href="#"><img src="image/3.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div>
+                <p><strong>ABOUT</strong></p>
+                <p>IIUM</p>
+                <p>Contact Us</p>
+            </div>
+            <div>
+                <p><strong>HELP</strong></p>
+                <p>Customer Support</p>
+                <p>Terms & Conditions</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div>
+                <p><strong>FAQ</strong></p>
+                <p>Account</p>
+                <p>Orders</p>
+                <p>Payments</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
